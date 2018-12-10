@@ -76,16 +76,22 @@
         </plugins>
     </build>
     <distributionManagement>
-      <repository>
-          <id>bintray-repo-maven</id>
-          <url>https://api.bintray.com/maven/serioussam/oss/com.github.serioussam:syslogappender/;publish=1</url>
-      </repository>
+        <repository>
+            <id>central</id>
+            <name>Auvious Releases</name>
+            <url>https://maven.auvious.com/artifactory/libs-release</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Auvious Snapshots</name>
+            <url>https://maven.auvious.com/artifactory/libs-snapshot</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <scm>
-      <connection>scm:git:git@github.com:serioussam/syslogappender.git</connection>
-      <developerConnection>scm:git:git@github.com:serioussam/syslogappender.git</developerConnection>
-      <url>git@github.com:serioussam/syslogappender.git</url>
+      <connection>scm:git:git@github.com:pimenas/syslogappender.git</connection>
+      <developerConnection>scm:git:git@github.com:pimenas/syslogappender.git</developerConnection>
+      <url>git@github.com:pimenas/syslogappender.git</url>
       <tag>HEAD</tag>
     </scm>
 
